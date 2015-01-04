@@ -57,8 +57,8 @@
 
 // Arduino Duemilanove, Diecimila, LilyPad, Mini, Fio, etc
 #else
-  //#define IR_USE_TIMER1   // tx = pin 9
-  #define IR_USE_TIMER2     // tx = pin 3
+  #define IR_USE_TIMER1   // tx = pin 9
+  //#define IR_USE_TIMER2     // tx = pin 3
 #endif
 
 
@@ -211,7 +211,7 @@ extern volatile irparams_t irparams;
 #elif defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
 #define TIMER_PWM_PIN        14 /* Sanguino */
 #else
-#define TIMER_PWM_PIN        3  /* Arduino Duemilanove, Diecimila, LilyPad, etc */
+#define TIMER_PWM_PIN        9  /* Arduino Duemilanove, Diecimila, LilyPad, etc */
 #endif
 
 
